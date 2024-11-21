@@ -1,0 +1,54 @@
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Se ajusta para cubrir toda la altura del viewport */
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    background-image: url('../images/fondoIndex.png'); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el contenedor */
+    background-repeat: no-repeat; /* No se repite */
+    background-position: center center; /* Centrada horizontal y verticalmente */
+}
+
+.confirmation-box {
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo más claro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+}
+
+.confirmation-box h2 {
+    color: #0056b3; /* Azul más oscuro */
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.confirmation-box p {
+    color: #333; /* Texto más oscuro */
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* Azul primario */
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}

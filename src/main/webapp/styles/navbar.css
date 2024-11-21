@@ -1,0 +1,106 @@
+/* Estilos generales para el navbar */
+.navbar {
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Contenedor del contenido dentro del navbar */
+.navbar-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Marca o logo del navbar */
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #d4e3ff; /* Azul claro para hover */
+}
+
+/* Menú del navbar */
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+/* Elementos individuales del menú */
+.navbar-menu li {
+    display: inline;
+}
+
+/* Enlaces del menú */
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover y estado activo para los enlaces */
+.navbar-menu a:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    color: #d4e3ff; /* Azul claro */
+}
+
+.navbar-menu .active {
+    background-color: #0056b3; /* Azul más oscuro */
+    color: white;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1; /* Esto hace que el contenido ocupe todo el espacio disponible */
+    padding: 20px; /* Agrega algo de espacio alrededor del contenido */
+}
+
+footer {
+    background-color: rgba(0, 123, 255, 0.9); /* Azul con opacidad */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: auto; /* Asegura que el footer siempre se quede al fondo */
+}
+
+footer p {
+    margin: 0; /* Elimina márgenes extras */
+}
+
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+}
